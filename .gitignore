@@ -1,0 +1,11 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+
+# Demo video (~260 MB) — keep locally and upload on Canvas; use GitHub Releases if needed
+demo/*.mp4

@@ -1,0 +1,26 @@
+MP3 evaluation harness
+Command: python mp3_grounded_qa.py eval
+Generated: 2026-11-21 14:55 UTC
+Corpus dir: D:\IIT Madras\Labs\AI_Practice\Week12\mp3\corpus
+Collection: mp3_sherlock
+Chat model: openai/gpt-4o-mini
+Embed model: openai/text-embedding-3-small
+RETRIEVAL_K=8  RETRIEVAL_THRESHOLD=0.3
+Questions: 9 (predefined + learner; includes should-abstain rows)
+  id                              type     hit   abstained  grounded  ok
+  --------------------------------------------------------------------------
+  q1_red_headed_league_assistant  answer   Y     N          Y         Y
+  q2_speckled_band_weapon         answer   Y     N          Y         Y
+  q3_scandal_bohemia_adler        answer   Y     N          Y         Y
+  q4_engineers_thumb_press        answer   Y     N          Y         Y
+  abstain_moriarty                abstain  N     Y          N         Y
+  abstain_out_of_domain           abstain  N     Y          N         Y
+  q5_carbuncle_discovery          answer   Y     N          Y         Y
+  q6_speckled_band_multihop       answer   Y     N          Y         Y
+  q7_abstain_lestrade             abstain  N     Y          N         Y
+  --------------------------------------------------------------------------
+
+  Retrieval hit rate    : 1.0   (6 answerable questions)
+  Grounded & cited rate : 1.0   (KPI: grounded response rate)
+  Abstention accuracy   : 1.0   (3 should-abstain questions)
+  Hallucination rate    : 0.0   (KPI: hallucination rate)
